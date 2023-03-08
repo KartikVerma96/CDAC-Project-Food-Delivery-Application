@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../components/Card'
-// import Carousel from '../components/Carousel'
+//import Carousel from '../components/Carousel'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+
 export default function Home() {
   const [foodCat, setFoodCat] = useState([])
   const [foodItems, setFoodItems] = useState([])
@@ -33,23 +34,23 @@ export default function Home() {
         <Navbar />
       </div>
       <div>
-        <div id="carouselExampleFade" className="carousel slide carousel-fade " data-bs-ride="carousel">
+        <div id="carouselExampleFade" className="carousel slide carousel-fade " data-bs-ride="carousel" >
 
           <div className="carousel-inner " id='carousel'>
-            <div class=" carousel-caption  " style={{ zIndex: "9" }}>
+            <div className=" carousel-caption  " style={{ zIndex: "9" }}>
               <div className=" d-flex justify-content-center">  {/* justify-content-center, copy this <form> from navbar for search box */}
                 <input className="form-control me-2 w-75 bg-white text-dark" type="search" placeholder="Search in here..." aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
                 <button className="btn text-white bg-danger" onClick={() => { setSearch('') }}>X</button>
               </div>
             </div>
             <div className="carousel-item active" >
-              <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100  " style={{ filter: "brightness(30%)" }} alt="..." />
+              <img src="https://nomadparadise.com/wp-content/uploads/2022/07/indian-foods-14.jpg" className="d-block w-100  " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="https://source.unsplash.com/random/900x700/?pastry" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
+              <img src="https://i.ytimg.com/vi/L1wbKvWKjgE/maxresdefault.jpg" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="https://source.unsplash.com/random/900x700/?barbeque" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
+              <img src="https://amritsruae.com/blog/wp-content/uploads/2021/10/indian-sweets-to-try.jpg" className="d-block w-100 " style={{ filter: "brightness(30%)" }} alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -87,6 +88,7 @@ export default function Home() {
               )
             })
             : ""}
+           
       </div>
       <Footer />
     </div>

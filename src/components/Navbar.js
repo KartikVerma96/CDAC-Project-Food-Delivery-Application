@@ -58,7 +58,7 @@ export default function Navbar(props) {
 
                                 {cartView ? <Modal onClose={() => setCartView(false)}><Cart></Cart></Modal> : ""}
 
-                                <button onClick={handleLogout} className="btn bg-white text-success" >Logout</button></div>}
+                                <button onClick={handleLogout} className="btn bg-white text-danger" >Logout</button></div>}
                     </div>
                 </div>
             </nav>
